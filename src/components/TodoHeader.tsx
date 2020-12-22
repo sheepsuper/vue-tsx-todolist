@@ -14,6 +14,7 @@ const useStyle = createUseStyles({
 		height: '30px',
 		border: '1px solid #ccc',
 		borderRadius: '4px',
+		outline: 'none',
 	},
 	button: {
 		width: '60px',
@@ -24,6 +25,7 @@ const useStyle = createUseStyles({
 		border: 'none',
 		borderRadius: '2px',
 		marginLeft: '5px',
+		outline: 'none',
 	},
 })
 

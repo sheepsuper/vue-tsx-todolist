@@ -28,6 +28,7 @@ const useStyle = createUseStyles({
 		marginLeft: '5px',
 		borderRadius: '2px',
 		backgroundColor: '#F56C6C',
+		outline: 'none',
 	},
 	isComplate: {
 		color: '#fff',
@@ -38,6 +39,7 @@ const useStyle = createUseStyles({
 		marginLeft: '5px',
 		borderRadius: '2px',
 		backgroundColor: '#67C23A',
+		outline: 'none',
 	},
 	itemCenter: {
 		flex: 1,
