@@ -41,14 +41,14 @@ export default defineComponent({
 		const refInputValue = ref('')
 		const userCalssesRef = useStyle()
 
-		const addItem = () => {
+		const addItem = (): void => {
 			const value: string = refInputValue.value
 			if (!value.trim()) return
 			props.onAdd(refInputValue.value)
 			refInputValue.value = ''
 		}
 
-		const handleKeyUp = (e: KeyboardEvent) => {
+		const handleKeyUp = (e: KeyboardEvent): void => {
 			if (e.key === 'Enter') addItem()
 		}
 

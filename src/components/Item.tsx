@@ -28,7 +28,6 @@ const useStyle = createUseStyles({
 		marginLeft: '5px',
 		borderRadius: '2px',
 		backgroundColor: '#F56C6C',
-		outline: 'none',
 	},
 	isComplate: {
 		color: '#fff',
@@ -39,7 +38,6 @@ const useStyle = createUseStyles({
 		marginLeft: '5px',
 		borderRadius: '2px',
 		backgroundColor: '#67C23A',
-		outline: 'none',
 	},
 	itemCenter: {
 		flex: 1,
@@ -66,7 +64,7 @@ export default defineComponent({
 	setup(props) {
 		const classStyleRef = useStyle()
 
-		const handleClick = () => {
+		const handleClick = (): void => {
 			const { item, onDelete, index } = props
 			if (item.isComplete) return
 			onDelete(index)

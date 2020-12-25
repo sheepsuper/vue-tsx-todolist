@@ -32,12 +32,12 @@ export default defineComponent({
 			{ id: 30, name: 'Jocky', isComplete: false },
 		])
 
-		const radomTrueOrFalse = () => {
+		const radomTrueOrFalse = (): boolean => {
 			const mathRadomNum = Math.random()
 			return mathRadomNum > 0.5 ? true : false
 		}
 
-		const addItem = (v: string) => {
+		const addItem = (v: string): void => {
 			const item = {} as Person
 			if (v) {
 				const nextLastNum: number = data[data.length - 1].id + 10
@@ -48,7 +48,7 @@ export default defineComponent({
 			data.push(item)
 		}
 
-		const remove = (index: number) => {
+		const remove = (index: number): void => {
 			data.splice(index, 1)
 		}
 
