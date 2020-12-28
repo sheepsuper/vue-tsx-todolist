@@ -4,7 +4,11 @@ export default defineComponent({
 	name: 'echarts',
 	setup() {
 		return () => {
-			return <div>echarts{/* <el-button>按钮</el-button> */}</div>
+			return (
+				<div>
+					<el-button type="primary">按钮</el-button>
+				</div>
+			)
 		}
 	},
 })
